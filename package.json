@@ -1,0 +1,37 @@
+{
+  "name": "book-register-desktop",
+  "version": "1.0.0",
+  "description": "書記 桌面版",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "packager": "electron-packager ./app 書記 --platform win32 --arch ia32 --icon ./app/icon.ico --asar false --out ./build --overwrite"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "https://github.com/qwqcode/book-register-desktop",
+  "keywords": [
+    "book-register-desktop"
+  ],
+  "author": "qwqcode <1149527164@qq.com> (https://github.com/qwqcode)",
+  "devDependencies": {
+    "electron": "^3.0.7",
+    "electron-installer-windows": "^1.1.0",
+    "electron-winstaller": "^2.7.0",
+    "electron-wix-msi": "^2.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "electron-localshortcut": "^3.1.0"
+  },
+  "build": {
+    "appId": "com.qwqaq.book-register-desktop",
+    "productName": "book-register-desktop",
+    "copyright": "Copyright © 2018 qwqaq.com",
+    "win": {
+      "icon": "./icon.ico"
+    }
+  }
+}
