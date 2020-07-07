@@ -17,7 +17,7 @@
   ],
   "author": "qwqcode <1149527164@qq.com> (https://github.com/qwqcode)",
   "devDependencies": {
-    "electron": "^3.0.7",
+    "electron": "^7.2.4",
     "electron-installer-windows": "^1.1.0",
     "electron-winstaller": "^2.7.0",
     "electron-wix-msi": "^2.1.1"
